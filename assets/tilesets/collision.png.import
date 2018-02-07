@@ -2,25 +2,26 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/collision.png-4b86bad63ca862bfc443eb4933f99527.stex"
+path.s3tc="res://.import/collision.png-4b86bad63ca862bfc443eb4933f99527.s3tc.stex"
+path.etc2="res://.import/collision.png-4b86bad63ca862bfc443eb4933f99527.etc2.stex"
 
 [deps]
 
 source_file="res://assets/tilesets/collision.png"
 source_md5="41af67c3f4d38be6618ad45a9932eccb"
 
-dest_files=[ "res://.import/collision.png-4b86bad63ca862bfc443eb4933f99527.stex" ]
-dest_md5="370fd72abff5016aade95c7b7666a914"
+dest_files=[ "res://.import/collision.png-4b86bad63ca862bfc443eb4933f99527.s3tc.stex", "res://.import/collision.png-4b86bad63ca862bfc443eb4933f99527.etc2.stex" ]
+dest_md5="167c1e923d3a863bccb04743e4245a95"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
@@ -28,5 +29,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

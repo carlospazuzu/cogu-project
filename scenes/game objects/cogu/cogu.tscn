@@ -1,35 +1,36 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scenes/game objects/cogu/cogu.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/cogu/idle.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/cogu/blink.png" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/cogu/jump.png" type="Texture" id=4]
-[ext_resource path="res://assets/sprites/cogu/jump-and-shot.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/cogu/jump-and-shot.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/cogu/shooting.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/cogu/run-1.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/cogu/run-2.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/cogu/run-3.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/cogu/run-and-shoot.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/cogu/run-and-shoot-2.png" type="Texture" id=10]
 [ext_resource path="res://assets/sprites/cogu/run-and-shoot-3.png" type="Texture" id=11]
-[ext_resource path="res://assets/sprites/cogu/shooting.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprites/cogu/run-start.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/cogu/run-start.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/cogu/jump.png" type="Texture" id=13]
+[ext_resource path="res://assets/sound/sfx/bullet.wav" type="AudioStream" id=14]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "jump",
+"name": "jump n shoot",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "jump n shoot",
+"name": "shoot",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ) ],
@@ -40,16 +41,16 @@ animations = [ {
 "frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "run n shoot",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
-"name": "shoot",
+"name": "start run",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
-"name": "start run",
+"name": "jump",
 "speed": 5.0
 } ]
 
@@ -58,7 +59,7 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 5.875, 11.8107 )
 
-[node name="player" type="KinematicBody2D" index="0"]
+[node name="player" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -70,12 +71,30 @@ script = ExtResource( 1 )
 
 frames = SubResource( 1 )
 animation = "idle"
-frame = 7
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
 position = Vector2( 1.25, 6 )
 shape = SubResource( 2 )
+
+[node name="Timers" type="Node2D" parent="." index="2"]
+
+[node name="Shooting Timer" type="Timer" parent="Timers" index="0"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = true
+autostart = false
+
+[node name="bullet_sound" type="AudioStreamPlayer" parent="." index="3"]
+
+stream = ExtResource( 14 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[connection signal="timeout" from="Timers/Shooting Timer" to="." method="_on_Shooting_Timer_timeout"]
 
 

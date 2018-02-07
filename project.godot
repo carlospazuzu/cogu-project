@@ -11,18 +11,20 @@ config_version=3
 [application]
 
 config/name="COGU"
-run/main_scene="res://scenes/world.tscn"
+run/main_scene="res://scenes/splash screens/cogumelando.tscn"
 config/icon="res://game-icon.png"
 
 [display]
 
-window/size/width=256
-window/size/height=224
+window/size/width=768
+window/size/height=672
 window/size/resizable=false
 
 [input]
 
 jump=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"unicode":0,"echo":false,"script":null)
+ ]
+shoot=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":90,"unicode":0,"echo":false,"script":null)
  ]
 
 [rendering]

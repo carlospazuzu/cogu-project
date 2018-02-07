@@ -1,0 +1,4958 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://scenes/splash screens/Row 01.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/flipping squares/black to white/black to white 1.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/flipping squares/black to white/black to white 2.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/flipping squares/black to white/black to white 3.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/flipping squares/to yellow/to yellow 01.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/flipping squares/to yellow/to yellow 02.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/flipping squares/to yellow/to yellow 03.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/flipping squares/black to blacker/black to blacker 01.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/flipping squares/black to blacker/black to blacker 02.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/flipping squares/black to blacker/black to blacker 03.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/flipping squares/black to blacker/black to blacker 04.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/flipping squares/black to blacker/black to blacker 05.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/flipping squares/black to blacker/black to blacker 06.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/flipping squares/to white/to white 01.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/flipping squares/to white/to white 02.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/flipping squares/to white/to white 03.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/flipping squares/to dark green/to dark green 01.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/flipping squares/to dark green/to dark green 02.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/flipping squares/to dark green/to dark green 03.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/flipping squares/to middle green/to middle green 01.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/flipping squares/to middle green/to middle green 02.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/flipping squares/to middle green/to middle green 03.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/flipping squares/to light green/to light green 01.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/flipping squares/to light green/to light green 02.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/flipping squares/to light green/to light green 03.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/flipping squares/to light orange/to light orange 01.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/flipping squares/to light orange/to light orange 02.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/flipping squares/to light orange/to light orange 03.png" type="Texture" id=28]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="Matrix" type="Node2D" index="0"]
+
+[node name="Row 01" type="Node" parent="." index="0"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 01" index="0"]
+
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 01" index="1"]
+
+position = Vector2( 32, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 01" index="2"]
+
+position = Vector2( 64, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 01" index="3"]
+
+position = Vector2( 96, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 01" index="4"]
+
+position = Vector2( 128, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 01" index="5"]
+
+position = Vector2( 160, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 01" index="6"]
+
+position = Vector2( 192, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 01" index="7"]
+
+position = Vector2( 224, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 01" index="8"]
+
+position = Vector2( 256, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 01" index="9"]
+
+position = Vector2( 480, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 01" index="10"]
+
+position = Vector2( 512, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 01" index="11"]
+
+position = Vector2( 544, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 01" index="12"]
+
+position = Vector2( 576, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 01" index="13"]
+
+position = Vector2( 608, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow21" type="AnimatedSprite" parent="Row 01" index="14"]
+
+position = Vector2( 640, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow22" type="AnimatedSprite" parent="Row 01" index="15"]
+
+position = Vector2( 672, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow23" type="AnimatedSprite" parent="Row 01" index="16"]
+
+position = Vector2( 704, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow24" type="AnimatedSprite" parent="Row 01" index="17"]
+
+position = Vector2( 736, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 01" index="18"]
+
+position = Vector2( 288, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 01" index="19"]
+
+position = Vector2( 320, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 01" index="20"]
+
+position = Vector2( 352, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 01" index="21"]
+
+position = Vector2( 384, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black5" type="AnimatedSprite" parent="Row 01" index="22"]
+
+position = Vector2( 416, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 01" index="23"]
+
+position = Vector2( 448, 0 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 02" type="Node2D" parent="." index="1"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 02" index="0"]
+
+position = Vector2( 0, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 02" index="1"]
+
+position = Vector2( 32, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 02" index="2"]
+
+position = Vector2( 64, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 02" index="3"]
+
+position = Vector2( 96, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 02" index="4"]
+
+position = Vector2( 128, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 02" index="5"]
+
+position = Vector2( 160, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 02" index="6"]
+
+position = Vector2( 192, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 02" index="7"]
+
+position = Vector2( 224, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 02" index="8"]
+
+position = Vector2( 256, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 02" index="9"]
+
+position = Vector2( 480, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 02" index="10"]
+
+position = Vector2( 512, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 02" index="11"]
+
+position = Vector2( 544, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 02" index="12"]
+
+position = Vector2( 576, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 02" index="13"]
+
+position = Vector2( 608, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 02" index="14"]
+
+position = Vector2( 640, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 02" index="15"]
+
+position = Vector2( 672, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 02" index="16"]
+
+position = Vector2( 704, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 02" index="17"]
+
+position = Vector2( 736, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 02" index="18"]
+
+position = Vector2( 288, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 02" index="19"]
+
+position = Vector2( 320, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 02" index="20"]
+
+position = Vector2( 416, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 02" index="21"]
+
+position = Vector2( 448, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green" type="AnimatedSprite" parent="Row 02" index="22"]
+
+position = Vector2( 352, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green2" type="AnimatedSprite" parent="Row 02" index="23"]
+
+position = Vector2( 384, 32 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 03" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 03" index="0"]
+
+position = Vector2( 0, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 03" index="1"]
+
+position = Vector2( 32, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 03" index="2"]
+
+position = Vector2( 64, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 03" index="3"]
+
+position = Vector2( 96, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 03" index="4"]
+
+position = Vector2( 128, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 03" index="5"]
+
+position = Vector2( 160, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green" type="AnimatedSprite" parent="Row 03" index="6"]
+
+position = Vector2( 224, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green2" type="AnimatedSprite" parent="Row 03" index="7"]
+
+position = Vector2( 512, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 03" index="8"]
+
+position = Vector2( 256, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 03" index="9"]
+
+position = Vector2( 288, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 03" index="10"]
+
+position = Vector2( 320, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 03" index="11"]
+
+position = Vector2( 416, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 03" index="12"]
+
+position = Vector2( 448, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 03" index="13"]
+
+position = Vector2( 480, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 03" index="14"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 03" index="15"]
+
+position = Vector2( 544, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 03" index="16"]
+
+position = Vector2( 576, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 03" index="17"]
+
+position = Vector2( 608, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 03" index="18"]
+
+position = Vector2( 640, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 03" index="19"]
+
+position = Vector2( 672, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 03" index="20"]
+
+position = Vector2( 704, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 03" index="21"]
+
+position = Vector2( 736, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 03" index="22"]
+
+position = Vector2( 352, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 03" index="23"]
+
+position = Vector2( 384, 64 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 04" type="Node2D" parent="." index="3"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 04" index="0"]
+
+position = Vector2( 0, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 04" index="1"]
+
+position = Vector2( 32, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 04" index="2"]
+
+position = Vector2( 64, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 04" index="3"]
+
+position = Vector2( 96, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 04" index="4"]
+
+position = Vector2( 128, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 04" index="5"]
+
+position = Vector2( 160, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green" type="AnimatedSprite" parent="Row 04" index="6"]
+
+position = Vector2( 192, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green2" type="AnimatedSprite" parent="Row 04" index="7"]
+
+position = Vector2( 544, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 04" index="8"]
+
+position = Vector2( 224, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 04" index="9"]
+
+position = Vector2( 256, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 04" index="10"]
+
+position = Vector2( 288, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 04" index="11"]
+
+position = Vector2( 448, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 04" index="12"]
+
+position = Vector2( 480, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 04" index="13"]
+
+position = Vector2( 512, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green3" type="AnimatedSprite" parent="Row 04" index="14"]
+
+position = Vector2( 320, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green4" type="AnimatedSprite" parent="Row 04" index="15"]
+
+position = Vector2( 352, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green5" type="AnimatedSprite" parent="Row 04" index="16"]
+
+position = Vector2( 384, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green6" type="AnimatedSprite" parent="Row 04" index="17"]
+
+position = Vector2( 416, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 04" index="18"]
+
+position = Vector2( 576, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 04" index="19"]
+
+position = Vector2( 608, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 04" index="20"]
+
+position = Vector2( 640, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 04" index="21"]
+
+position = Vector2( 672, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 04" index="22"]
+
+position = Vector2( 704, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 04" index="23"]
+
+position = Vector2( 736, 96 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 05" type="Node2D" parent="." index="4"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 05" index="0"]
+
+position = Vector2( 0, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 05" index="1"]
+
+position = Vector2( 32, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 05" index="2"]
+
+position = Vector2( 64, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 05" index="3"]
+
+position = Vector2( 96, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 05" index="4"]
+
+position = Vector2( 128, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 05" index="5"]
+
+position = Vector2( 608, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 05" index="6"]
+
+position = Vector2( 640, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 05" index="7"]
+
+position = Vector2( 672, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 05" index="8"]
+
+position = Vector2( 704, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 05" index="9"]
+
+position = Vector2( 736, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 05" index="10"]
+
+position = Vector2( 160, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 05" index="11"]
+
+position = Vector2( 576, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 05" index="12"]
+
+position = Vector2( 192, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 05" index="13"]
+
+position = Vector2( 544, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 05" index="14"]
+
+position = Vector2( 224, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 05" index="15"]
+
+position = Vector2( 256, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green3" type="AnimatedSprite" parent="Row 05" index="16"]
+
+position = Vector2( 288, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green4" type="AnimatedSprite" parent="Row 05" index="17"]
+
+position = Vector2( 448, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green5" type="AnimatedSprite" parent="Row 05" index="18"]
+
+position = Vector2( 480, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green6" type="AnimatedSprite" parent="Row 05" index="19"]
+
+position = Vector2( 512, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Light Green" type="AnimatedSprite" parent="Row 05" index="20"]
+
+position = Vector2( 320, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 6 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Light Green2" type="AnimatedSprite" parent="Row 05" index="21"]
+
+position = Vector2( 352, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 6 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Light Green3" type="AnimatedSprite" parent="Row 05" index="22"]
+
+position = Vector2( 384, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 6 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Light Green4" type="AnimatedSprite" parent="Row 05" index="23"]
+
+position = Vector2( 416, 128 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 6 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 06" type="Node2D" parent="." index="5"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 06" index="0"]
+
+position = Vector2( 0, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 06" index="1"]
+
+position = Vector2( 32, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 06" index="2"]
+
+position = Vector2( 64, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 06" index="3"]
+
+position = Vector2( 96, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 06" index="4"]
+
+position = Vector2( 640, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 06" index="5"]
+
+position = Vector2( 672, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 06" index="6"]
+
+position = Vector2( 704, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 06" index="7"]
+
+position = Vector2( 736, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 06" index="8"]
+
+position = Vector2( 128, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 06" index="9"]
+
+position = Vector2( 608, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 06" index="10"]
+
+position = Vector2( 160, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 06" index="11"]
+
+position = Vector2( 320, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 06" index="12"]
+
+position = Vector2( 352, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 06" index="13"]
+
+position = Vector2( 384, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White7" type="AnimatedSprite" parent="Row 06" index="14"]
+
+position = Vector2( 416, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White8" type="AnimatedSprite" parent="Row 06" index="15"]
+
+position = Vector2( 512, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White9" type="AnimatedSprite" parent="Row 06" index="16"]
+
+position = Vector2( 544, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White10" type="AnimatedSprite" parent="Row 06" index="17"]
+
+position = Vector2( 576, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 06" index="18"]
+
+position = Vector2( 192, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 06" index="19"]
+
+position = Vector2( 224, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 06" index="20"]
+
+position = Vector2( 256, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 06" index="21"]
+
+position = Vector2( 480, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Light Green" type="AnimatedSprite" parent="Row 06" index="22"]
+
+position = Vector2( 288, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 6 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Light Green2" type="AnimatedSprite" parent="Row 06" index="23"]
+
+position = Vector2( 448, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 6 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 07" type="Node2D" parent="." index="6"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 07" index="0"]
+
+position = Vector2( 0, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 07" index="1"]
+
+position = Vector2( 32, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 07" index="2"]
+
+position = Vector2( 64, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 07" index="3"]
+
+position = Vector2( 96, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 07" index="4"]
+
+position = Vector2( 640, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 07" index="5"]
+
+position = Vector2( 672, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 07" index="6"]
+
+position = Vector2( 704, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 07" index="7"]
+
+position = Vector2( 736, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 07" index="8"]
+
+position = Vector2( 128, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 07" index="9"]
+
+position = Vector2( 608, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 07" index="10"]
+
+position = Vector2( 160, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 07" index="11"]
+
+position = Vector2( 320, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 07" index="12"]
+
+position = Vector2( 352, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 07" index="13"]
+
+position = Vector2( 384, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White7" type="AnimatedSprite" parent="Row 07" index="14"]
+
+position = Vector2( 416, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White8" type="AnimatedSprite" parent="Row 07" index="15"]
+
+position = Vector2( 512, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White9" type="AnimatedSprite" parent="Row 07" index="16"]
+
+position = Vector2( 544, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White10" type="AnimatedSprite" parent="Row 07" index="17"]
+
+position = Vector2( 576, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 07" index="18"]
+
+position = Vector2( 192, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 07" index="19"]
+
+position = Vector2( 224, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White11" type="AnimatedSprite" parent="Row 07" index="20"]
+
+position = Vector2( 288, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White12" type="AnimatedSprite" parent="Row 07" index="21"]
+
+position = Vector2( 448, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 07" index="22"]
+
+position = Vector2( 256, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 07" index="23"]
+
+position = Vector2( 480, 192 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 08" type="Node2D" parent="." index="7"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 08" index="0"]
+
+position = Vector2( 0, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 08" index="1"]
+
+position = Vector2( 32, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 08" index="2"]
+
+position = Vector2( 64, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 08" index="3"]
+
+position = Vector2( 96, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 08" index="4"]
+
+position = Vector2( 640, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 08" index="5"]
+
+position = Vector2( 672, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 08" index="6"]
+
+position = Vector2( 704, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 08" index="7"]
+
+position = Vector2( 736, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 08" index="8"]
+
+position = Vector2( 128, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 08" index="9"]
+
+position = Vector2( 608, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 08" index="10"]
+
+position = Vector2( 160, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 08" index="11"]
+
+position = Vector2( 320, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 08" index="12"]
+
+position = Vector2( 352, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 08" index="13"]
+
+position = Vector2( 384, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White7" type="AnimatedSprite" parent="Row 08" index="14"]
+
+position = Vector2( 416, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White8" type="AnimatedSprite" parent="Row 08" index="15"]
+
+position = Vector2( 512, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White9" type="AnimatedSprite" parent="Row 08" index="16"]
+
+position = Vector2( 544, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White10" type="AnimatedSprite" parent="Row 08" index="17"]
+
+position = Vector2( 576, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 08" index="18"]
+
+position = Vector2( 192, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 08" index="19"]
+
+position = Vector2( 224, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White11" type="AnimatedSprite" parent="Row 08" index="20"]
+
+position = Vector2( 288, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White12" type="AnimatedSprite" parent="Row 08" index="21"]
+
+position = Vector2( 448, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 08" index="22"]
+
+position = Vector2( 256, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 08" index="23"]
+
+position = Vector2( 480, 224 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 09" type="Node2D" parent="." index="8"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 09" index="0"]
+
+position = Vector2( 0, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 09" index="1"]
+
+position = Vector2( 32, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 09" index="2"]
+
+position = Vector2( 64, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 09" index="3"]
+
+position = Vector2( 96, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 09" index="4"]
+
+position = Vector2( 640, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 09" index="5"]
+
+position = Vector2( 672, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 09" index="6"]
+
+position = Vector2( 704, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 09" index="7"]
+
+position = Vector2( 736, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 09" index="8"]
+
+position = Vector2( 128, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 09" index="9"]
+
+position = Vector2( 608, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 09" index="10"]
+
+position = Vector2( 160, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 09" index="11"]
+
+position = Vector2( 320, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 09" index="12"]
+
+position = Vector2( 352, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 09" index="13"]
+
+position = Vector2( 384, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White7" type="AnimatedSprite" parent="Row 09" index="14"]
+
+position = Vector2( 416, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White9" type="AnimatedSprite" parent="Row 09" index="15"]
+
+position = Vector2( 544, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White10" type="AnimatedSprite" parent="Row 09" index="16"]
+
+position = Vector2( 576, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 09" index="17"]
+
+position = Vector2( 192, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White11" type="AnimatedSprite" parent="Row 09" index="18"]
+
+position = Vector2( 288, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White12" type="AnimatedSprite" parent="Row 09" index="19"]
+
+position = Vector2( 448, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 09" index="20"]
+
+position = Vector2( 256, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green3" type="AnimatedSprite" parent="Row 09" index="21"]
+
+position = Vector2( 224, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green4" type="AnimatedSprite" parent="Row 09" index="22"]
+
+position = Vector2( 512, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 09" index="23"]
+
+position = Vector2( 480, 256 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 10" type="Node2D" parent="." index="9"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 10" index="0"]
+
+position = Vector2( 0, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 10" index="1"]
+
+position = Vector2( 32, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 10" index="2"]
+
+position = Vector2( 64, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 10" index="3"]
+
+position = Vector2( 96, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 10" index="4"]
+
+position = Vector2( 640, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 10" index="5"]
+
+position = Vector2( 672, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 10" index="6"]
+
+position = Vector2( 704, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 10" index="7"]
+
+position = Vector2( 736, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 10" index="8"]
+
+position = Vector2( 128, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 10" index="9"]
+
+position = Vector2( 608, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green" type="AnimatedSprite" parent="Row 10" index="10"]
+
+position = Vector2( 160, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green2" type="AnimatedSprite" parent="Row 10" index="11"]
+
+position = Vector2( 224, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green3" type="AnimatedSprite" parent="Row 10" index="12"]
+
+position = Vector2( 256, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green4" type="AnimatedSprite" parent="Row 10" index="13"]
+
+position = Vector2( 288, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green5" type="AnimatedSprite" parent="Row 10" index="14"]
+
+position = Vector2( 448, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green6" type="AnimatedSprite" parent="Row 10" index="15"]
+
+position = Vector2( 480, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green7" type="AnimatedSprite" parent="Row 10" index="16"]
+
+position = Vector2( 512, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green8" type="AnimatedSprite" parent="Row 10" index="17"]
+
+position = Vector2( 576, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green" type="AnimatedSprite" parent="Row 10" index="18"]
+
+position = Vector2( 192, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Middle Green2" type="AnimatedSprite" parent="Row 10" index="19"]
+
+position = Vector2( 544, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 5 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 10" index="20"]
+
+position = Vector2( 320, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 10" index="21"]
+
+position = Vector2( 352, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 10" index="22"]
+
+position = Vector2( 384, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 10" index="23"]
+
+position = Vector2( 416, 288 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 11" type="Node2D" parent="." index="10"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 11" index="0"]
+
+position = Vector2( 0, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 11" index="1"]
+
+position = Vector2( 32, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 11" index="2"]
+
+position = Vector2( 64, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 11" index="3"]
+
+position = Vector2( 96, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 11" index="4"]
+
+position = Vector2( 640, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 11" index="5"]
+
+position = Vector2( 672, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 11" index="6"]
+
+position = Vector2( 704, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 11" index="7"]
+
+position = Vector2( 736, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 11" index="8"]
+
+position = Vector2( 128, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 11" index="9"]
+
+position = Vector2( 224, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 11" index="10"]
+
+position = Vector2( 256, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 11" index="11"]
+
+position = Vector2( 288, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black5" type="AnimatedSprite" parent="Row 11" index="12"]
+
+position = Vector2( 320, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 11" index="13"]
+
+position = Vector2( 352, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black7" type="AnimatedSprite" parent="Row 11" index="14"]
+
+position = Vector2( 384, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black8" type="AnimatedSprite" parent="Row 11" index="15"]
+
+position = Vector2( 416, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black9" type="AnimatedSprite" parent="Row 11" index="16"]
+
+position = Vector2( 448, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black10" type="AnimatedSprite" parent="Row 11" index="17"]
+
+position = Vector2( 480, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black11" type="AnimatedSprite" parent="Row 11" index="18"]
+
+position = Vector2( 512, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black12" type="AnimatedSprite" parent="Row 11" index="19"]
+
+position = Vector2( 608, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green" type="AnimatedSprite" parent="Row 11" index="20"]
+
+position = Vector2( 160, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green3" type="AnimatedSprite" parent="Row 11" index="21"]
+
+position = Vector2( 544, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green4" type="AnimatedSprite" parent="Row 11" index="22"]
+
+position = Vector2( 576, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green2" type="AnimatedSprite" parent="Row 11" index="23"]
+
+position = Vector2( 192, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 22" type="Node2D" parent="." index="11"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 22" index="0"]
+
+position = Vector2( 0, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 22" index="1"]
+
+position = Vector2( 32, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 22" index="2"]
+
+position = Vector2( 64, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 22" index="3"]
+
+position = Vector2( 96, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 22" index="4"]
+
+position = Vector2( 640, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 22" index="5"]
+
+position = Vector2( 672, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 22" index="6"]
+
+position = Vector2( 704, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 22" index="7"]
+
+position = Vector2( 736, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 22" index="8"]
+
+position = Vector2( 128, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 22" index="9"]
+
+position = Vector2( 224, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 22" index="10"]
+
+position = Vector2( 256, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 22" index="11"]
+
+position = Vector2( 288, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black5" type="AnimatedSprite" parent="Row 22" index="12"]
+
+position = Vector2( 320, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 22" index="13"]
+
+position = Vector2( 352, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black7" type="AnimatedSprite" parent="Row 22" index="14"]
+
+position = Vector2( 384, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black8" type="AnimatedSprite" parent="Row 22" index="15"]
+
+position = Vector2( 416, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black9" type="AnimatedSprite" parent="Row 22" index="16"]
+
+position = Vector2( 448, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black10" type="AnimatedSprite" parent="Row 22" index="17"]
+
+position = Vector2( 480, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black11" type="AnimatedSprite" parent="Row 22" index="18"]
+
+position = Vector2( 512, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black12" type="AnimatedSprite" parent="Row 22" index="19"]
+
+position = Vector2( 608, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green" type="AnimatedSprite" parent="Row 22" index="20"]
+
+position = Vector2( 160, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green3" type="AnimatedSprite" parent="Row 22" index="21"]
+
+position = Vector2( 544, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green4" type="AnimatedSprite" parent="Row 22" index="22"]
+
+position = Vector2( 576, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Green2" type="AnimatedSprite" parent="Row 22" index="23"]
+
+position = Vector2( 192, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 12" type="Node2D" parent="." index="12"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 12" index="0"]
+
+position = Vector2( 0, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 12" index="1"]
+
+position = Vector2( 32, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 12" index="2"]
+
+position = Vector2( 64, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 12" index="3"]
+
+position = Vector2( 96, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 12" index="4"]
+
+position = Vector2( 128, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 12" index="5"]
+
+position = Vector2( 608, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 12" index="6"]
+
+position = Vector2( 640, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 12" index="7"]
+
+position = Vector2( 672, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 12" index="8"]
+
+position = Vector2( 704, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 12" index="9"]
+
+position = Vector2( 736, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 12" index="10"]
+
+position = Vector2( 160, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 12" index="11"]
+
+position = Vector2( 192, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 12" index="12"]
+
+position = Vector2( 224, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 12" index="13"]
+
+position = Vector2( 320, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black5" type="AnimatedSprite" parent="Row 12" index="14"]
+
+position = Vector2( 416, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 12" index="15"]
+
+position = Vector2( 512, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black7" type="AnimatedSprite" parent="Row 12" index="16"]
+
+position = Vector2( 544, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black8" type="AnimatedSprite" parent="Row 12" index="17"]
+
+position = Vector2( 576, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange" type="AnimatedSprite" parent="Row 12" index="18"]
+
+position = Vector2( 256, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange2" type="AnimatedSprite" parent="Row 12" index="19"]
+
+position = Vector2( 288, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange3" type="AnimatedSprite" parent="Row 12" index="20"]
+
+position = Vector2( 352, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange4" type="AnimatedSprite" parent="Row 12" index="21"]
+
+position = Vector2( 384, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange5" type="AnimatedSprite" parent="Row 12" index="22"]
+
+position = Vector2( 448, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange6" type="AnimatedSprite" parent="Row 12" index="23"]
+
+position = Vector2( 480, 352 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 13" type="Node2D" parent="." index="13"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 13" index="0"]
+
+position = Vector2( 0, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 13" index="1"]
+
+position = Vector2( 32, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 13" index="2"]
+
+position = Vector2( 64, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 13" index="3"]
+
+position = Vector2( 96, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 13" index="4"]
+
+position = Vector2( 128, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 13" index="5"]
+
+position = Vector2( 160, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 13" index="6"]
+
+position = Vector2( 576, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 13" index="7"]
+
+position = Vector2( 608, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 13" index="8"]
+
+position = Vector2( 640, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 13" index="9"]
+
+position = Vector2( 672, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 13" index="10"]
+
+position = Vector2( 704, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 13" index="11"]
+
+position = Vector2( 736, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 13" index="12"]
+
+position = Vector2( 192, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 13" index="13"]
+
+position = Vector2( 320, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 13" index="14"]
+
+position = Vector2( 416, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 13" index="15"]
+
+position = Vector2( 544, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange" type="AnimatedSprite" parent="Row 13" index="16"]
+
+position = Vector2( 224, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange2" type="AnimatedSprite" parent="Row 13" index="17"]
+
+position = Vector2( 512, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 13" index="18"]
+
+position = Vector2( 256, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 13" index="19"]
+
+position = Vector2( 288, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 13" index="20"]
+
+position = Vector2( 352, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 13" index="21"]
+
+position = Vector2( 384, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 13" index="22"]
+
+position = Vector2( 448, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 13" index="23"]
+
+position = Vector2( 480, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 14" type="Node2D" parent="." index="14"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 14" index="0"]
+
+position = Vector2( 0, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 14" index="1"]
+
+position = Vector2( 32, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 14" index="2"]
+
+position = Vector2( 64, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 14" index="3"]
+
+position = Vector2( 96, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 14" index="4"]
+
+position = Vector2( 128, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 14" index="5"]
+
+position = Vector2( 160, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 14" index="6"]
+
+position = Vector2( 576, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 14" index="7"]
+
+position = Vector2( 608, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 14" index="8"]
+
+position = Vector2( 640, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 14" index="9"]
+
+position = Vector2( 672, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 14" index="10"]
+
+position = Vector2( 704, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 14" index="11"]
+
+position = Vector2( 736, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 14" index="12"]
+
+position = Vector2( 192, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 14" index="13"]
+
+position = Vector2( 544, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange" type="AnimatedSprite" parent="Row 14" index="14"]
+
+position = Vector2( 224, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange2" type="AnimatedSprite" parent="Row 14" index="15"]
+
+position = Vector2( 512, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White" type="AnimatedSprite" parent="Row 14" index="16"]
+
+position = Vector2( 256, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White2" type="AnimatedSprite" parent="Row 14" index="17"]
+
+position = Vector2( 288, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White7" type="AnimatedSprite" parent="Row 14" index="18"]
+
+position = Vector2( 320, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White8" type="AnimatedSprite" parent="Row 14" index="19"]
+
+position = Vector2( 416, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White3" type="AnimatedSprite" parent="Row 14" index="20"]
+
+position = Vector2( 352, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White4" type="AnimatedSprite" parent="Row 14" index="21"]
+
+position = Vector2( 384, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White5" type="AnimatedSprite" parent="Row 14" index="22"]
+
+position = Vector2( 448, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="White6" type="AnimatedSprite" parent="Row 14" index="23"]
+
+position = Vector2( 480, 416 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 15" type="Node2D" parent="." index="15"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 15" index="0"]
+
+position = Vector2( 0, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 15" index="1"]
+
+position = Vector2( 32, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 15" index="2"]
+
+position = Vector2( 64, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 15" index="3"]
+
+position = Vector2( 96, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 15" index="4"]
+
+position = Vector2( 128, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 15" index="5"]
+
+position = Vector2( 160, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 15" index="6"]
+
+position = Vector2( 576, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 15" index="7"]
+
+position = Vector2( 608, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 15" index="8"]
+
+position = Vector2( 640, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 15" index="9"]
+
+position = Vector2( 672, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 15" index="10"]
+
+position = Vector2( 704, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 15" index="11"]
+
+position = Vector2( 736, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black" type="AnimatedSprite" parent="Row 15" index="12"]
+
+position = Vector2( 192, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black7" type="AnimatedSprite" parent="Row 15" index="13"]
+
+position = Vector2( 224, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 15" index="14"]
+
+position = Vector2( 320, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 15" index="15"]
+
+position = Vector2( 352, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black5" type="AnimatedSprite" parent="Row 15" index="16"]
+
+position = Vector2( 384, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 15" index="17"]
+
+position = Vector2( 416, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black8" type="AnimatedSprite" parent="Row 15" index="18"]
+
+position = Vector2( 512, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 15" index="19"]
+
+position = Vector2( 544, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange3" type="AnimatedSprite" parent="Row 15" index="20"]
+
+position = Vector2( 256, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange4" type="AnimatedSprite" parent="Row 15" index="21"]
+
+position = Vector2( 288, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange5" type="AnimatedSprite" parent="Row 15" index="22"]
+
+position = Vector2( 448, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange6" type="AnimatedSprite" parent="Row 15" index="23"]
+
+position = Vector2( 480, 448 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 16" type="Node2D" parent="." index="16"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 16" index="0"]
+
+position = Vector2( 0, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 16" index="1"]
+
+position = Vector2( 32, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 16" index="2"]
+
+position = Vector2( 64, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 16" index="3"]
+
+position = Vector2( 96, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 16" index="4"]
+
+position = Vector2( 128, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 16" index="5"]
+
+position = Vector2( 160, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 16" index="6"]
+
+position = Vector2( 192, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 16" index="7"]
+
+position = Vector2( 576, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 16" index="8"]
+
+position = Vector2( 544, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 16" index="9"]
+
+position = Vector2( 608, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 16" index="10"]
+
+position = Vector2( 640, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 16" index="11"]
+
+position = Vector2( 672, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 16" index="12"]
+
+position = Vector2( 704, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 16" index="13"]
+
+position = Vector2( 736, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black7" type="AnimatedSprite" parent="Row 16" index="14"]
+
+position = Vector2( 224, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black9" type="AnimatedSprite" parent="Row 16" index="15"]
+
+position = Vector2( 256, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black10" type="AnimatedSprite" parent="Row 16" index="16"]
+
+position = Vector2( 288, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 16" index="17"]
+
+position = Vector2( 320, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 16" index="18"]
+
+position = Vector2( 416, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black11" type="AnimatedSprite" parent="Row 16" index="19"]
+
+position = Vector2( 448, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black12" type="AnimatedSprite" parent="Row 16" index="20"]
+
+position = Vector2( 480, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black8" type="AnimatedSprite" parent="Row 16" index="21"]
+
+position = Vector2( 512, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange5" type="AnimatedSprite" parent="Row 16" index="22"]
+
+position = Vector2( 352, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Orange6" type="AnimatedSprite" parent="Row 16" index="23"]
+
+position = Vector2( 384, 480 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 17" type="Node2D" parent="." index="17"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 17" index="0"]
+
+position = Vector2( 0, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 17" index="1"]
+
+position = Vector2( 32, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 17" index="2"]
+
+position = Vector2( 64, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 17" index="3"]
+
+position = Vector2( 96, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 17" index="4"]
+
+position = Vector2( 128, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 17" index="5"]
+
+position = Vector2( 160, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 17" index="6"]
+
+position = Vector2( 192, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 17" index="7"]
+
+position = Vector2( 576, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 17" index="8"]
+
+position = Vector2( 544, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 17" index="9"]
+
+position = Vector2( 608, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 17" index="10"]
+
+position = Vector2( 640, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 17" index="11"]
+
+position = Vector2( 672, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 17" index="12"]
+
+position = Vector2( 704, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 17" index="13"]
+
+position = Vector2( 736, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black9" type="AnimatedSprite" parent="Row 17" index="14"]
+
+position = Vector2( 256, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black13" type="AnimatedSprite" parent="Row 17" index="15"]
+
+position = Vector2( 224, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black10" type="AnimatedSprite" parent="Row 17" index="16"]
+
+position = Vector2( 288, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 17" index="17"]
+
+position = Vector2( 320, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 17" index="18"]
+
+position = Vector2( 352, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 17" index="19"]
+
+position = Vector2( 384, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 17" index="20"]
+
+position = Vector2( 416, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black11" type="AnimatedSprite" parent="Row 17" index="21"]
+
+position = Vector2( 448, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black12" type="AnimatedSprite" parent="Row 17" index="22"]
+
+position = Vector2( 480, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black14" type="AnimatedSprite" parent="Row 17" index="23"]
+
+position = Vector2( 512, 512 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 18" type="Node2D" parent="." index="18"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 18" index="0"]
+
+position = Vector2( 0, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 18" index="1"]
+
+position = Vector2( 32, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 18" index="2"]
+
+position = Vector2( 64, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 18" index="3"]
+
+position = Vector2( 96, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 18" index="4"]
+
+position = Vector2( 128, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 18" index="5"]
+
+position = Vector2( 160, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 18" index="6"]
+
+position = Vector2( 192, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow15" type="AnimatedSprite" parent="Row 18" index="7"]
+
+position = Vector2( 224, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow16" type="AnimatedSprite" parent="Row 18" index="8"]
+
+position = Vector2( 512, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 18" index="9"]
+
+position = Vector2( 576, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 18" index="10"]
+
+position = Vector2( 544, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 18" index="11"]
+
+position = Vector2( 608, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 18" index="12"]
+
+position = Vector2( 640, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 18" index="13"]
+
+position = Vector2( 672, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 18" index="14"]
+
+position = Vector2( 704, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 18" index="15"]
+
+position = Vector2( 736, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black9" type="AnimatedSprite" parent="Row 18" index="16"]
+
+position = Vector2( 256, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black10" type="AnimatedSprite" parent="Row 18" index="17"]
+
+position = Vector2( 288, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 18" index="18"]
+
+position = Vector2( 320, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 18" index="19"]
+
+position = Vector2( 352, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 18" index="20"]
+
+position = Vector2( 384, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 18" index="21"]
+
+position = Vector2( 416, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black11" type="AnimatedSprite" parent="Row 18" index="22"]
+
+position = Vector2( 448, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black12" type="AnimatedSprite" parent="Row 18" index="23"]
+
+position = Vector2( 480, 544 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 19" type="Node2D" parent="." index="19"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 19" index="0"]
+
+position = Vector2( 0, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 19" index="1"]
+
+position = Vector2( 32, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 19" index="2"]
+
+position = Vector2( 64, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 19" index="3"]
+
+position = Vector2( 96, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 19" index="4"]
+
+position = Vector2( 128, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 19" index="5"]
+
+position = Vector2( 160, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 19" index="6"]
+
+position = Vector2( 192, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow15" type="AnimatedSprite" parent="Row 19" index="7"]
+
+position = Vector2( 224, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow17" type="AnimatedSprite" parent="Row 19" index="8"]
+
+position = Vector2( 256, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow18" type="AnimatedSprite" parent="Row 19" index="9"]
+
+position = Vector2( 480, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow16" type="AnimatedSprite" parent="Row 19" index="10"]
+
+position = Vector2( 512, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 19" index="11"]
+
+position = Vector2( 576, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 19" index="12"]
+
+position = Vector2( 544, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 19" index="13"]
+
+position = Vector2( 608, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 19" index="14"]
+
+position = Vector2( 640, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 19" index="15"]
+
+position = Vector2( 672, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 19" index="16"]
+
+position = Vector2( 704, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 19" index="17"]
+
+position = Vector2( 736, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black10" type="AnimatedSprite" parent="Row 19" index="18"]
+
+position = Vector2( 288, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 19" index="19"]
+
+position = Vector2( 320, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 19" index="20"]
+
+position = Vector2( 352, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 19" index="21"]
+
+position = Vector2( 384, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 19" index="22"]
+
+position = Vector2( 416, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black11" type="AnimatedSprite" parent="Row 19" index="23"]
+
+position = Vector2( 448, 576 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 20" type="Node2D" parent="." index="20"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 20" index="0"]
+
+position = Vector2( 0, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 20" index="1"]
+
+position = Vector2( 32, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 20" index="2"]
+
+position = Vector2( 64, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 20" index="3"]
+
+position = Vector2( 96, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 20" index="4"]
+
+position = Vector2( 128, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 20" index="5"]
+
+position = Vector2( 160, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 20" index="6"]
+
+position = Vector2( 192, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow15" type="AnimatedSprite" parent="Row 20" index="7"]
+
+position = Vector2( 224, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow17" type="AnimatedSprite" parent="Row 20" index="8"]
+
+position = Vector2( 256, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow19" type="AnimatedSprite" parent="Row 20" index="9"]
+
+position = Vector2( 288, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow20" type="AnimatedSprite" parent="Row 20" index="10"]
+
+position = Vector2( 448, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow18" type="AnimatedSprite" parent="Row 20" index="11"]
+
+position = Vector2( 480, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow16" type="AnimatedSprite" parent="Row 20" index="12"]
+
+position = Vector2( 512, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 20" index="13"]
+
+position = Vector2( 576, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 20" index="14"]
+
+position = Vector2( 544, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 20" index="15"]
+
+position = Vector2( 608, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 20" index="16"]
+
+position = Vector2( 640, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 20" index="17"]
+
+position = Vector2( 672, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 20" index="18"]
+
+position = Vector2( 704, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 20" index="19"]
+
+position = Vector2( 736, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black2" type="AnimatedSprite" parent="Row 20" index="20"]
+
+position = Vector2( 320, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black3" type="AnimatedSprite" parent="Row 20" index="21"]
+
+position = Vector2( 352, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black4" type="AnimatedSprite" parent="Row 20" index="22"]
+
+position = Vector2( 384, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Black6" type="AnimatedSprite" parent="Row 20" index="23"]
+
+position = Vector2( 416, 608 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Row 21" type="Node2D" parent="." index="21"]
+
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Yellow" type="AnimatedSprite" parent="Row 21" index="0"]
+
+position = Vector2( 0, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow2" type="AnimatedSprite" parent="Row 21" index="1"]
+
+position = Vector2( 32, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow3" type="AnimatedSprite" parent="Row 21" index="2"]
+
+position = Vector2( 64, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow4" type="AnimatedSprite" parent="Row 21" index="3"]
+
+position = Vector2( 96, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow5" type="AnimatedSprite" parent="Row 21" index="4"]
+
+position = Vector2( 128, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow6" type="AnimatedSprite" parent="Row 21" index="5"]
+
+position = Vector2( 160, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow13" type="AnimatedSprite" parent="Row 21" index="6"]
+
+position = Vector2( 192, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow15" type="AnimatedSprite" parent="Row 21" index="7"]
+
+position = Vector2( 224, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow17" type="AnimatedSprite" parent="Row 21" index="8"]
+
+position = Vector2( 256, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow19" type="AnimatedSprite" parent="Row 21" index="9"]
+
+position = Vector2( 288, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow21" type="AnimatedSprite" parent="Row 21" index="10"]
+
+position = Vector2( 320, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow22" type="AnimatedSprite" parent="Row 21" index="11"]
+
+position = Vector2( 352, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow23" type="AnimatedSprite" parent="Row 21" index="12"]
+
+position = Vector2( 384, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow24" type="AnimatedSprite" parent="Row 21" index="13"]
+
+position = Vector2( 416, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow20" type="AnimatedSprite" parent="Row 21" index="14"]
+
+position = Vector2( 448, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow18" type="AnimatedSprite" parent="Row 21" index="15"]
+
+position = Vector2( 480, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow16" type="AnimatedSprite" parent="Row 21" index="16"]
+
+position = Vector2( 512, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow7" type="AnimatedSprite" parent="Row 21" index="17"]
+
+position = Vector2( 576, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow14" type="AnimatedSprite" parent="Row 21" index="18"]
+
+position = Vector2( 544, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow8" type="AnimatedSprite" parent="Row 21" index="19"]
+
+position = Vector2( 608, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow9" type="AnimatedSprite" parent="Row 21" index="20"]
+
+position = Vector2( 640, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow10" type="AnimatedSprite" parent="Row 21" index="21"]
+
+position = Vector2( 672, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow11" type="AnimatedSprite" parent="Row 21" index="22"]
+
+position = Vector2( 704, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Yellow12" type="AnimatedSprite" parent="Row 21" index="23"]
+
+position = Vector2( 736, 640 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+centered = false
+_sections_unfolded = [ "Transform" ]
+
+
